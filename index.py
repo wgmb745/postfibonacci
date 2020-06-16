@@ -5,23 +5,10 @@ import datetime
 def handler(event, context):
     n = int(9)
     lista = 'Vacio'
-    """
-    if event is not None:
-        #n = int(event["queryStringParameters"]["numfib"])
-        body = json.loads(event["body"])
-        n = int(body['numfib'])
-        a, b = 0,1
-        while a < n:
-            lista.append(a)
-            a, b = b, a+b
-    else:
-    """
-    #lista.append('')
-    
     data = {
         'numero':n,
         'fibonacci':lista,
-        'timestamp': datetime.datetime.utcnow().isoformat()
+        'timestamp':datetime.datetime.utcnow().isoformat()
     }
     
     return {'statusCode': 200,
