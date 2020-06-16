@@ -4,8 +4,8 @@ import datetime
 
 def handler(event, context):
     n = int(9)
-    """
     lista = []
+    """
     if event is not None:
         #n = int(event["queryStringParameters"]["numfib"])
         body = json.loads(event["body"])
