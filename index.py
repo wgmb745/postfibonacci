@@ -9,7 +9,7 @@ def handler(event, context):
     if event is not None:
         #n = int(event["queryStringParameters"]["numfib"])
         body = json.loads(event["body"])
-        n = body['numfib']
+        n = int(body['numfib'])
         a, b = 0,1
         while a < n:
             lista.append(a)
