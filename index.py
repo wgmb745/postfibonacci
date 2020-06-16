@@ -3,7 +3,8 @@ import datetime
 
 
 def handler(event, context):
-    n = int(0)
+    n = int(9)
+    """
     lista = []
     if event is not None:
         #n = int(event["queryStringParameters"]["numfib"])
@@ -14,7 +15,8 @@ def handler(event, context):
             lista.append(a)
             a, b = b, a+b
     else:
-        lista.append('No se definio un parametro para inicio')
+    """
+    lista.append('No se definio un parametro para inicio')
     
     data = {
         'numero':n,
