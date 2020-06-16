@@ -4,7 +4,7 @@ import datetime
 
 def handler(event, context):
     n = int(9)
-    lista = [No se definio un parametro para inicio]
+    lista = ['Vacio']
     """
     if event is not None:
         #n = int(event["queryStringParameters"]["numfib"])
