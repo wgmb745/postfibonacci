@@ -4,7 +4,7 @@ import datetime
 
 def handler(event, context):
     n = int(9)
-    lista = []
+    lista = [No se definio un parametro para inicio]
     """
     if event is not None:
         #n = int(event["queryStringParameters"]["numfib"])
@@ -16,7 +16,7 @@ def handler(event, context):
             a, b = b, a+b
     else:
     """
-    lista.append('No se definio un parametro para inicio')
+    #lista.append('')
     
     data = {
         'numero':n,
