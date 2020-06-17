@@ -1,9 +1,8 @@
 import json
 import datetime
 
-
 def handler(event, context):
-    n = int(9)
+    n = str(int(9))
     lista = 'Vacio'
     data = {
         'numero':n,
@@ -13,5 +12,4 @@ def handler(event, context):
     
     return {'statusCode': 200,
             'body': json.dumps(data),
-            'headers': {'Content-Type': 'application/json'}
-    }
+            'headers': {'Content-Type': 'application/json'}}
